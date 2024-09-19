@@ -62,4 +62,4 @@ Here are some screenshots of the application:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/MoSalem149v2/staff-dish-booking-management_DEBI-Task.git
+   git clone https://github.com/MoSalem149/staff-dish-booking-management_DEBI-Task.git
