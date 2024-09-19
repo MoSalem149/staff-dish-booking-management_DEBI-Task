@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="#">
+          <h1>Welcome to Our Restaurant</h1>
+        </a>
+        <nav>
+          <ul class="header-sections">
+            <li>
+              <a href="./staff-management.html">Staff Management</a>
+            </li>
+            <li>
+              <a href="./restaurant-status.html">Restaurant Status</a>
+            </li>
+            <li>
+              <a href="./special-announcement.html">Daily Special</a>
+            </li>
+            <li>
+              <a href="./customer-booking.html">Customer Booking</a>
+            </li>
+            <li>
+              <a href="./customer-management.html">Customer Management</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-subtitle">
+        <p>Your satisfaction is our priority!</p>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="staff-management">
+        <h2>Staff Management</h2>
+        <div class="container">
+          <h3>Manage Roles</h3>
+          <input type="text" id="roleInput" placeholder="Enter a new role" />
+          <button id="addRoleBtn">Add Role</button>
+          <h4>Staff Roles:</h4>
+          <ul id="roleList"></ul>
+          <p id="roleCount">Total unique roles: 0</p>
+          <p id="roleCheckResult"></p>
+        </div>
+      </section>
+
+      <section id="restaurant-status">
+        <h2>Restaurant Status</h2>
+        <div class="container">
+          <h3>Manage Restaurant Status</h3>
+          <div>
+            <label for="openingTime">Opening Time:</label>
+            <input type="time" id="openingTime" />
+          </div>
+          <div>
+            <label for="closingTime">Closing Time:</label>
+            <input type="time" id="closingTime" />
+          </div>
+          <div>
+            <label for="dishName">Add Available Dish:</label>
+            <input type="text" id="dishName" placeholder="Enter dish name" />
+            <button id="addDishBtn">Add Dish</button>
+          </div>
+          <h4>Available Dishes:</h4>
+          <ul id="dishList"></ul>
+          <h4>Check Restaurant Status:</h4>
+          <div>
+            <label for="currentTime">Current Time:</label>
+            <input type="time" id="currentTime" />
+            <button id="checkStatusBtn">Check Status</button>
+            <p id="statusResult"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="special-announcement">
+        <h2>Daily Special Announcement</h2>
+        <div class="container">
+          <p id="specialAnnouncement"></p>
+          <h3>Uppercase Announcement:</h3>
+          <p id="uppercaseAnnouncement"></p>
+          <h3>Updated Special Announcement:</h3>
+          <p id="updatedSpecial"></p>
+          <h3>Words Array:</h3>
+          <p id="wordsArray"></p>
+          <h3>No Spaces Announcement:</h3>
+          <p id="noSpacesAnnouncement"></p>
+          <h3>Hyphenated Announcement:</h3>
+          <p id="hyphenatedAnnouncement"></p>
+        </div>
+      </section>
+
+      <section id="customer-booking">
+        <h2>Customer Booking System</h2>
+        <div class="container">
+          <h3>Book a Table</h3>
+          <input type="text" id="customerName" placeholder="Enter your name" />
+          <button id="bookTableBtn">Book Table</button>
+          <h4>Booking Details:</h4>
+          <ul id="bookingList"></ul>
+          <p id="bookingCount">Total Bookings: 0</p>
+        </div>
+      </section>
+
+      <section id="customer-management">
+        <h2>Customer Management</h2>
+        <div class="container">
+          <h3>Customer Array Operations</h3>
+          <button id="generateResultsBtn">Generate Customer Results</button>
+          <h4>Customer Greetings:</h4>
+          <pre id="greetingsOutput"></pre>
+          <h4>Filtered Customers:</h4>
+          <pre id="filteredOutput"></pre>
+          <h4>Total Characters:</h4>
+          <p id="totalCharactersOutput"></p>
+          <h4>Reversed Customer Names:</h4>
+          <pre id="reversedOutput"></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="./staff-management.html">Staff</a>
+          <a href="./restaurant-status.html">Status</a>
+          <a href="./special-announcement.html">Specials</a>
+          <a href="./customer-booking.html">Bookings</a>
+          <a href="./customer-management.html">Customers</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="errorModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p id="errorMessage"></p>
+      </div>
+    </div>
+
+    <script src="js/staffManagementScript.js"></script>
+    <script src="js/restaurantStatusScript.js"></script>
+    <script src="js/specialAnnouncementScript.js"></script>
+    <script src="js/customerBookingScript.js"></script>
+    <script src="js/customerManagementScript.js"></script>
+  </body>
+</html>

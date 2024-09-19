@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>Welcome to Our Restaurant</h1>
+        <nav>
+          <ul class="header-sections">
+            <li>
+              <a href="./staff-management.html">Staff Management</a>
+            </li>
+            <li>
+              <a href="./restaurant-status.html">Restaurant Status</a>
+            </li>
+            <li>
+              <a href="./special-announcement.html">Daily Special</a>
+            </li>
+            <li>
+              <a href="./customer-booking.html">Customer Booking</a>
+            </li>
+            <li>
+              <a href="./customer-management.html">Customer Management</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-subtitle">
+        <p>Your satisfaction is our priority!</p>
+      </div>
+      <a href="./index.html">
+        <h3>Back to Home</h3>
+      </a>
+    </header>
+
+    <main id="main-content">
+      <section id="special-announcement">
+        <h2>Daily Special Announcement</h2>
+        <div class="container">
+          <p id="specialAnnouncement"></p>
+          <h3>Uppercase Announcement:</h3>
+          <p id="uppercaseAnnouncement"></p>
+          <h3>Updated Special Announcement:</h3>
+          <p id="updatedSpecial"></p>
+          <h3>Words Array:</h3>
+          <p id="wordsArray"></p>
+          <h3>No Spaces Announcement:</h3>
+          <p id="noSpacesAnnouncement"></p>
+          <h3>Hyphenated Announcement:</h3>
+          <p id="hyphenatedAnnouncement"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="./staff-management.html">Staff</a>
+          <a href="./restaurant-status.html">Status</a>
+          <a href="./special-announcement.html">Specials</a>
+          <a href="./customer-booking.html">Bookings</a>
+          <a href="./customer-management.html">Customers</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="errorModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <p id="errorMessage"></p>
+      </div>
+    </div>
+
+    <script src="js/specialAnnouncementScript.js"></script>
+  </body>
+</html>
